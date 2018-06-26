@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left:  -24px;
+    bottom: -8px;
+    content: '';
+    display: block;
+    width: 400px;
+    height: 8px;
+  }
+   &::before {
+    position: absolute;
+    bottom: -8px;
+    left: 373px;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+  }
+}
+
+.title {
+  position: relative;
+  font-family: 'BC-KAKAO';
+  font-size: 60px;
+  margin: 0;
+}
+
+.color {
+  &-white {
+    &::after, &::before {
+      background-color: var(--color-albiWhite);
+    }
+  }
+  &-yellow {
+    &::after, &::before {
+      background-color: var(--color-albiYellow)
+    }
+  }
+  &-blue {
+    &::after, &::before {
+      background-color: var(--color-albiBlue);
+    }
+  }
+  &-lightBlue {
+    &::after, &::before {
+      background-color: var(--color-albiLightBlue);
+    }
+  }
+  &-pink {
+    &::after, &::before {
+      background-color: var(--color-albiPink);
+    }
+  }
+}

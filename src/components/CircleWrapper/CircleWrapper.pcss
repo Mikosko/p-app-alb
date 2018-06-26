@@ -1,0 +1,119 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+
+  padding: 4px;
+
+  background-color: var(--color-albiBlue);
+  border-radius: 99999px;
+  border-width: 2px;
+  border-style: dashed;
+
+  text-align: center;
+
+  &::after,&::before  {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-width: 2px;
+      border-style: dashed;
+      border-radius: 999px;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.background {
+  &-white {
+    border-color: var(--color-albiWhite);
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      border-color: var(--color-albiWhite);
+      border-radius: 10px;
+      top: 20px;
+      left: -5px;
+      transform: rotate(80deg);
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      border-color: var(--color-albiWhite);
+      bottom: 10px;
+      right: -10px;
+    }
+  }
+  &-yellow {
+    border-color: var(--color-albiYellow);
+
+    &::after {
+      width: 90px;
+      height: 90px;
+      border-color: var(--color-albiYellow);
+      border-radius: 10px;
+      top: 50%;
+      left: -10px;
+      transform: rotate(37deg);
+    }
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      border-color: var(--color-albiYellow);
+      top: 15px;
+      right: -10px;
+      border-radius: 999px;
+    }
+  }
+  &-blue {
+    /* border-color: var(--color-albiBlue); #05467b */
+  }
+  &-lightBlue {
+    border-color: var(--color-albiLightBlue);
+
+    &::after {
+      width: 90px;
+      height: 90px;
+      border-color: var(--color-albiLightBlue);
+      border-radius: 10px;
+      top: 30%;
+      right: -10px;
+      transform: rotate(66deg);
+    }
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      border-color: var(--color-albiLightBlue);
+      top: 60%;
+      left: -20px;
+      border-radius: 999px;
+    }
+  }
+  &-pink {
+    border-color: var(--color-albiPink);
+
+    &::after {
+      width: 50px;
+      height: 50px;
+      border-color: var(--color-albiPink);
+      border-radius: 10px;
+      bottom: 70%;
+      right: -15px;
+      transform: rotate(99deg);
+    }
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      border-color: var(--color-albiPink);
+      bottom: 10px;
+      left: -20px;
+      border-radius: 999px;
+    }
+  }
+}
